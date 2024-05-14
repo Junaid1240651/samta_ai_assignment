@@ -61,6 +61,7 @@ const ToDoList = ({ editListItem, deleteItemIndex }) => {
 
                     <td class="flex whitespace-nowrap gap-2 px-4 py-2 ">
                       <Button
+                        bgColor="blue"
                         text={"Edit"}
                         onClick={() => editHandler(index)}
                       />
