@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import crossIcon from "../assets/cross.png";
 import circleIcon from "../assets/circle.png";
 import { useSelector, useDispatch } from "react-redux";
@@ -31,6 +31,8 @@ const TicTacToe = () => {
   };
 
   const checkWin = () => {
+    console.log(count);
+
     const winConditions = [
       [0, 1, 2],
       [3, 4, 5],
@@ -50,11 +52,6 @@ const TicTacToe = () => {
         updateScores(data[a]);
         return;
       }
-    }
-
-    if (count === 9) {
-      setLock(true);
-      setWinner("Draw");
     }
   };
 
@@ -94,6 +91,13 @@ const TicTacToe = () => {
     );
     setGameStarted(true);
   };
+  useEffect(() => {
+    if (count === 9) {
+      setLock(true);
+      setWinner("Draw");
+    }
+  }, [count]);
+  console.log(count);
 
   return (
     <div className="bg h-[100vh] p-10 flex flex-col items-center justify-evenly">

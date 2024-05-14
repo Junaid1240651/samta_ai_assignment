@@ -50,6 +50,7 @@ const AddToDoList = ({ editItemIndex, deleteItemIndex }) => {
           onChange={(e) =>
             setInput({ ...input, [e.target.id]: e.target.value })
           }
+          autoComplete="off"
           required
           value={input.name}
           type="text"
@@ -68,6 +69,7 @@ const AddToDoList = ({ editItemIndex, deleteItemIndex }) => {
         class="relative flex items-center block rounded-md border border-gray-200 shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600"
       >
         <input
+          autoComplete="off"
           onChange={(e) =>
             setInput({ ...input, [e.target.id]: e.target.value })
           }
@@ -89,6 +91,7 @@ const AddToDoList = ({ editItemIndex, deleteItemIndex }) => {
         class="relative flex items-center block rounded-md border border-gray-200 shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600"
       >
         <input
+          autoComplete="off"
           required
           onChange={(e) =>
             setInput({ ...input, [e.target.id]: e.target.value })
