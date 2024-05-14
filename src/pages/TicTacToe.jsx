@@ -117,7 +117,7 @@ const TicTacToe = () => {
             </h1>
           </div>
           <Button
-            bgColor="blue"
+            bgColor="bg-blue-600"
             text={"Reset Players"}
             onClick={resetPlayerHandler}
             className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
@@ -150,7 +150,7 @@ const TicTacToe = () => {
           </h1>
         )}
 
-        <Button bgColor="blue" text={"Reset"} onClick={resetGame} />
+        <Button bgColor="bg-blue-600" text={"Reset"} onClick={resetGame} />
       </div>
     </div>
   );

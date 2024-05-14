@@ -81,7 +81,11 @@ const PlayerName = ({ setGameStarted }) => {
           </label>
         </div>
 
-        <Button bgColor="blue" text="Start Game" onClick={handleStartGame} />
+        <Button
+          bgColor="bg-blue-600"
+          text="Start Game"
+          onClick={handleStartGame}
+        />
       </div>
     </div>
   );

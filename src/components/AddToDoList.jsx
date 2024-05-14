@@ -108,7 +108,7 @@ const AddToDoList = ({ editItemIndex, deleteItemIndex }) => {
         </span>
       </label>
       <Button
-        bgColor="blue"
+        bgColor="bg-blue-600"
         text={editIndex !== null ? "Edit" : "Add"}
         onClick={editIndex !== null ? editHandler : addHandler}
       />
