@@ -3,7 +3,7 @@ import crossIcon from "../assets/cross.png";
 import circleIcon from "../assets/circle.png";
 import { useSelector, useDispatch } from "react-redux";
 import { setPlayerData } from "../redux/playerActivity";
-import PlayerName from "../components/PlayerName";
+import PlayerName from "../components/playerName";
 import Button from "../components/Button";
 import TicTacToePlayBox from "../components/TicTacToePlayBox";
 import PlayerNameShow from "../components/PlayerNameShow";
