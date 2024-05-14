@@ -65,7 +65,7 @@ const ToDoList = ({ editListItem, deleteItemIndex }) => {
                         onClick={() => editHandler(index)}
                       />
                       <Button
-                        bgColor={"red"}
+                        bgColor="red"
                         text={"Delete"}
                         onClick={() => deleteHandler(index)}
                       />
