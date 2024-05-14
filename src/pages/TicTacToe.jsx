@@ -3,8 +3,10 @@ import crossIcon from "../assets/cross.png";
 import circleIcon from "../assets/circle.png";
 import { useSelector, useDispatch } from "react-redux";
 import { setPlayerData } from "../redux/playerActivity";
-import PlayerName from "../components/playerName";
+import PlayerName from "../components/PlayerName";
 import Button from "../components/Button";
+import TicTacToePlayBox from "../components/TicTacToePlayBox";
+import PlayerNameShow from "../components/PlayerNameShow";
 
 let data = ["", "", "", "", "", "", "", "", ""];
 
@@ -103,45 +105,12 @@ const TicTacToe = () => {
     <div className="bg h-[100vh] p-10 flex flex-col items-center justify-evenly">
       {gameStarted && <PlayerName setGameStarted={setGameStarted} />}
       {playerActivity.player1Name && (
-        <div className="flex flex-col items-center space-y-4">
-          <div className="text-white">
-            <h1 className="md:text-2xl sm:text-xl">
-              Player Name 1 : {playerActivity.player1Name} ( Score :{" "}
-              {playerActivity.player1Score})
-            </h1>
-          </div>
-          <div className="text-white">
-            <h1 className="md:text-2xl sm:text-xl">
-              Player Name 2 : {playerActivity.player2Name} ( Score :{" "}
-              {playerActivity.player2Score})
-            </h1>
-          </div>
-          <Button
-            bgColor="bg-blue-600"
-            text={"Reset Players"}
-            onClick={resetPlayerHandler}
-            className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
-          />
-        </div>
+        <PlayerNameShow
+          playerActivity={playerActivity}
+          resetPlayerHandler={resetPlayerHandler}
+        />
       )}
-
-      <div className="row-container  flex">
-        <div className="row1">
-          <div className="boxes" onClick={(e) => toggle(e, 0)}></div>
-          <div className="boxes" onClick={(e) => toggle(e, 1)}></div>
-          <div className="boxes" onClick={(e) => toggle(e, 2)}></div>
-        </div>
-        <div className="row2">
-          <div className="boxes" onClick={(e) => toggle(e, 3)}></div>
-          <div className="boxes" onClick={(e) => toggle(e, 4)}></div>
-          <div className="boxes" onClick={(e) => toggle(e, 5)}></div>
-        </div>
-        <div className="row3">
-          <div className="boxes" onClick={(e) => toggle(e, 6)}></div>
-          <div className="boxes" onClick={(e) => toggle(e, 7)}></div>
-          <div className="boxes" onClick={(e) => toggle(e, 8)}></div>
-        </div>
-      </div>
+      <TicTacToePlayBox toggle={toggle} />
 
       <div className=" flex flex-col items-center  gap-5 mt-4 text-white">
         {winner && (

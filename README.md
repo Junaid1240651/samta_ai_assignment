@@ -4,6 +4,8 @@ Live Project Link - https://samta-ai-assignment-nine.vercel.app/
 
 Project Demo Link - https://www.loom.com/share/53e15466cc724f8b97a26a66719c104e
 
+Screenshort - ![alt text](image.png)
+
 ## Installation
 
 1. Clone the repository:
