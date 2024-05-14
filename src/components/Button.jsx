@@ -4,7 +4,7 @@ const Button = ({ text, onClick, bgColor = "blue" }) => {
   return (
     <button
       onClick={onClick}
-      className={`bg-${bgColor}-600  text-white bg-red-600 py-2 px-4 rounded-md`}
+      className={`bg-${bgColor}-600  text-white  py-2 px-4 rounded-md`}
     >
       {text}
     </button>
