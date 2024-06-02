@@ -18,3 +18,5 @@ Screenshort - ![alt text](image.png)
    npm start
 
 4. Open your browser and navigate to `http://localhost:3000`.
+
+5.My Resume - https://drive.google.com/file/d/10ichiHcIg3i3ybQr4GhCHIjeieKYSfMz/view?usp=drivesdk
