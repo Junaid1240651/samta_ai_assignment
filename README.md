@@ -19,4 +19,5 @@ Screenshort - ![alt text](image.png)
 
 4. Open your browser and navigate to `http://localhost:3000`.
 
-5.My Resume - https://drive.google.com/file/d/10ichiHcIg3i3ybQr4GhCHIjeieKYSfMz/view?usp=drivesdk
+5.My Resume - 
+[Resume_Junaid_Khan.pdf](https://github.com/user-attachments/files/15525874/Resume_Junaid_Khan.pdf)
